@@ -17,6 +17,7 @@ class Main extends React.Component {
 			<div id="main-container">
 				{this.renderScore()}
 				{this.props.names.map(name => <HelloWorld name={name == 'Top' ? name + '-Kim' : name} />)}
+				<button onClick={(e) => {alert('clicked'); console.log(e.target)}}>click me</button>
 			</div>
 		)
 	}
