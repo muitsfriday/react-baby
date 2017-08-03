@@ -4,4 +4,4 @@ import HelloWorld from './components/HelloWorld'
 
 
 
-ReactDom.render(<HelloWorld />, document.getElementById('app'));
+ReactDom.render(<HelloWorld name="muitsfriday" />, document.getElementById('app'));

@@ -11255,10 +11255,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var HelloWorld = function (_React$Component) {
 	_inherits(HelloWorld, _React$Component);
 
-	function HelloWorld() {
+	function HelloWorld(props) {
 		_classCallCheck(this, HelloWorld);
 
-		return _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).apply(this, arguments));
+		return _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).call(this, props));
 	}
 
 	_createClass(HelloWorld, [{
@@ -11267,13 +11267,18 @@ var HelloWorld = function (_React$Component) {
 			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				'h1',
 				null,
-				'Hello World'
+				'Hello World name: ',
+				this.props.name
 			);
 		}
 	}]);
 
 	return HelloWorld;
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+HelloWorld.defaultProps = {
+	name: 'not provided'
+};
 
 var _default = HelloWorld;
 /* harmony default export */ var HelloWorld_defaultExport = (_default);
@@ -11299,7 +11304,7 @@ var _temp = function () {
 
 
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(src___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, null), document.getElementById('app'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(src___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: 'muitsfriday' }), document.getElementById('app'));
 ;
 
 var src__temp = function () {
