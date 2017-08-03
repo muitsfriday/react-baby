@@ -11381,7 +11381,7 @@ var Main__temp = function () {
 
 
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(src___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Main_defaultExport, { names: ['Bell', 'Ann', 'Top'] }), document.getElementById('app'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(src___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Main_defaultExport, { names: ['Bell', 'Ann', 'Top', 'Tim'], score: '100' }), document.getElementById('app'));
 ;
 
 var src__temp = function () {
