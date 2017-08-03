@@ -1,5 +1,6 @@
 import React from 'react'
 import HelloWorld from './HelloWorld'
+import MagicBox from './MagicBox'
 
 
 class Main extends React.Component {
@@ -11,26 +12,9 @@ class Main extends React.Component {
 		}
 	}
 
-	componentWillMount() {
-		console.log('componentWillMount')
-	}
-
-	componentDidMount() {
-		console.log('componentDidMount')
-	}
-
 	shouldComponentUpdate(nextProps, nextState) {
 		console.log('shouldComponentUpdate')
 		return parseInt(this.state.score) !== parseInt(nextState.score)
-	}
-
-	componentWillUpdate() {
-		console.log('componentWillUpdate')
-	}
-
-
-	componentDidUpdate() {
-		console.log('componentDidUpdate')
 	}
 
 	addScore(score) {
@@ -48,15 +32,14 @@ class Main extends React.Component {
 	}
 
 	render() {
-		console.log('render')
 		return (
-			<div id="main-container">
+			<MagicBox>
 				<p> score: {this.state.score}</p>
 				{this.renderScore()}
 				{this.props.names.map(name => <HelloWorld key={name} name={name == 'Top' ? name + '-Kim' : name} />)}
 				<button onClick={(e) => {this.addScore(50)}}>click me + 50 score</button>
 				<button onClick={(e) => {this.addScore(0)}}>click me + 0 score</button>
-			</div>
+			</MagicBox>
 		)
 	}
 
