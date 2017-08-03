@@ -11237,7 +11237,6 @@ var _temp = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // CONCATENATED MODULE: ./src/components/HelloWorld.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(32);
@@ -11319,13 +11318,31 @@ var Main_Main = function (_React$Component) {
 	}
 
 	Main__createClass(Main, [{
+		key: 'renderScore',
+		value: function renderScore() {
+			if (this.props.score > 50) {
+				return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					'p',
+					null,
+					'score is more than 50'
+				);
+			} else {
+				return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					'p',
+					null,
+					'score is less than or equal 50'
+				);
+			}
+		}
+	}, {
 		key: 'render',
 		value: function render() {
 			return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				'div',
 				{ id: 'main-container' },
+				this.renderScore(),
 				this.props.names.map(function (name) {
-					return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: name });
+					return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: name.indexOf('Top') >= 0 ? name + ' Kim' : name });
 				})
 			);
 		}
@@ -11335,7 +11352,8 @@ var Main_Main = function (_React$Component) {
 }(Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 Main_Main.defaultProps = {
-	names: []
+	names: [],
+	score: 0
 };
 
 var Main__default = Main_Main;
@@ -11362,7 +11380,7 @@ var Main__temp = function () {
 
 
 
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(src___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Main_defaultExport, { names: ['Bell', 'Ann', 'Top'] }), document.getElementById('app'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(src___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Main_defaultExport, { names: ['Bell', 'Ann', 'Top', 'Tim'], score: '100' }), document.getElementById('app'));
 ;
 
 var src__temp = function () {
