@@ -8,13 +8,15 @@ class Main extends React.Component {
 	render() {
 		return (
 			<div id="main-container">
-				<HelloWorld />
-				<HelloWorld name="Ann" />
-				<HelloWorld name="Bell" />
+				{this.props.names.map(name => <HelloWorld name={name} />)}
 			</div>
 		)
 	}
 
+}
+
+Main.defaultProps = {
+	names: []
 }
 
 

@@ -11237,7 +11237,6 @@ var _temp = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // CONCATENATED MODULE: ./src/components/HelloWorld.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(32);
@@ -11324,9 +11323,9 @@ var Main_Main = function (_React$Component) {
 			return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				'div',
 				{ id: 'main-container' },
-				Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, null),
-				Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: 'Ann' }),
-				Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: 'Bell' })
+				this.props.names.map(function (name) {
+					return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: name });
+				})
 			);
 		}
 	}]);
@@ -11334,9 +11333,11 @@ var Main_Main = function (_React$Component) {
 	return Main;
 }(Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
+Main_Main.defaultProps = {
+	names: []
+};
+
 var Main__default = Main_Main;
-
-
 /* harmony default export */ var Main_defaultExport = (Main__default);
 ;
 
