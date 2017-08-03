@@ -4,3 +4,4 @@ import Main from './components/Main'
 
 
 ReactDom.render(<Main names={['Bell', 'Ann', 'Top']} />, document.getElementById('app'));
+
