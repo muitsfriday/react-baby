@@ -5,10 +5,20 @@ import HelloWorld from './HelloWorld'
 class Main extends React.Component {
 
 
+	renderScore() {
+		if(this.props.score > 50) {
+			return <p>you pass</p>
+		} else {
+			return <p>you fail</p>
+		}
+	}
+
 	render() {
 		return (
 			<div id="main-container">
-				{this.props.names.map(name => <HelloWorld name={name} />)}
+				{this.renderScore()}
+				{this.props.names.map(name => <HelloWorld name={name == 'Top' ? name + '-Kim' : name} />)}
+				
 			</div>
 		)
 	}
@@ -16,7 +26,8 @@ class Main extends React.Component {
 }
 
 Main.defaultProps = {
-	names: []
+	names: [],
+	score: 0
 }
 
 
