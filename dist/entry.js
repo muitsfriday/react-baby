@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 184);
+/******/ 	return __webpack_require__(__webpack_require__.s = 82);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11233,7 +11233,147 @@ var _temp = function () {
 ;
 
 /***/ }),
-/* 82 */,
+/* 82 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+
+// CONCATENATED MODULE: ./src/components/HelloWorld.js
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var HelloWorld = function (_React$Component) {
+	_inherits(HelloWorld, _React$Component);
+
+	function HelloWorld(props) {
+		_classCallCheck(this, HelloWorld);
+
+		return _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).call(this, props));
+	}
+
+	_createClass(HelloWorld, [{
+		key: 'render',
+		value: function render() {
+			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				'h1',
+				null,
+				'Hello World name: ',
+				this.props.name
+			);
+		}
+	}]);
+
+	return HelloWorld;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+HelloWorld.defaultProps = {
+	name: 'not provided'
+};
+
+var _default = HelloWorld;
+/* harmony default export */ var HelloWorld_defaultExport = (_default);
+;
+
+var _temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(HelloWorld, 'HelloWorld', '/Users/muitsfriday/react/react-baby/src/components/HelloWorld.js');
+
+	__REACT_HOT_LOADER__.register(_default, 'default', '/Users/muitsfriday/react/react-baby/src/components/HelloWorld.js');
+}();
+
+;
+// CONCATENATED MODULE: ./src/components/Main.js
+/* harmony import */ var Main___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(32);
+/* harmony import */ var Main___WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(Main___WEBPACK_IMPORTED_MODULE_0_react__);
+var Main__createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function Main__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function Main__possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function Main__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var Main_Main = function (_React$Component) {
+	Main__inherits(Main, _React$Component);
+
+	function Main(props) {
+		Main__classCallCheck(this, Main);
+
+		return Main__possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+	}
+
+	Main__createClass(Main, [{
+		key: 'render',
+		value: function render() {
+			return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				'div',
+				{ id: 'main-container' },
+				this.props.names.map(function (name) {
+					return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: name });
+				})
+			);
+		}
+	}]);
+
+	return Main;
+}(Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+Main_Main.defaultProps = {
+	names: []
+};
+
+var Main__default = Main_Main;
+/* harmony default export */ var Main_defaultExport = (Main__default);
+;
+
+var Main__temp = function () {
+	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+		return;
+	}
+
+	__REACT_HOT_LOADER__.register(Main_Main, 'Main', '/Users/muitsfriday/react/react-baby/src/components/Main.js');
+
+	__REACT_HOT_LOADER__.register(Main__default, 'default', '/Users/muitsfriday/react/react-baby/src/components/Main.js');
+}();
+
+;
+// CONCATENATED MODULE: ./src/index.js
+/* harmony import */ var src___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(32);
+/* harmony import */ var src___WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(src___WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(src___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Main_defaultExport, { names: ['Bell', 'Ann', 'Top'] }), document.getElementById('app'));
+;
+
+var src__temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+}();
+
+;
+
+/***/ }),
 /* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25452,89 +25592,6 @@ var _temp = function () {
 
 ;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 184 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-
-// CONCATENATED MODULE: ./src/components/HelloWorld.js
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-
-
-var HelloWorld = function (_React$Component) {
-	_inherits(HelloWorld, _React$Component);
-
-	function HelloWorld(props) {
-		_classCallCheck(this, HelloWorld);
-
-		return _possibleConstructorReturn(this, (HelloWorld.__proto__ || Object.getPrototypeOf(HelloWorld)).call(this, props));
-	}
-
-	_createClass(HelloWorld, [{
-		key: 'render',
-		value: function render() {
-			return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-				'h1',
-				null,
-				'Hello World name: ',
-				this.props.name
-			);
-		}
-	}]);
-
-	return HelloWorld;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-HelloWorld.defaultProps = {
-	name: 'not provided'
-};
-
-var _default = HelloWorld;
-/* harmony default export */ var HelloWorld_defaultExport = (_default);
-;
-
-var _temp = function () {
-	if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-		return;
-	}
-
-	__REACT_HOT_LOADER__.register(HelloWorld, 'HelloWorld', '/Users/muitsfriday/react/react-baby/src/components/HelloWorld.js');
-
-	__REACT_HOT_LOADER__.register(_default, 'default', '/Users/muitsfriday/react/react-baby/src/components/HelloWorld.js');
-}();
-
-;
-// CONCATENATED MODULE: ./src/index.js
-/* harmony import */ var src___WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(32);
-/* harmony import */ var src___WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(src___WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-
-
-
-
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(src___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: 'muitsfriday' }), document.getElementById('app'));
-;
-
-var src__temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
-}();
-
-;
 
 /***/ })
 /******/ ]);
