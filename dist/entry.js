@@ -11312,10 +11312,10 @@ function Main__inherits(subClass, superClass) { if (typeof superClass !== "funct
 var Main_Main = function (_React$Component) {
 	Main__inherits(Main, _React$Component);
 
-	function Main(props) {
+	function Main() {
 		Main__classCallCheck(this, Main);
 
-		return Main__possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this, props));
+		return Main__possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
 	}
 
 	Main__createClass(Main, [{
@@ -11325,13 +11325,13 @@ var Main_Main = function (_React$Component) {
 				return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					'p',
 					null,
-					'score is more than 50'
+					'you pass'
 				);
 			} else {
 				return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 					'p',
 					null,
-					'score is less than or equal 50'
+					'you fail'
 				);
 			}
 		}
@@ -11343,7 +11343,7 @@ var Main_Main = function (_React$Component) {
 				{ id: 'main-container' },
 				this.renderScore(),
 				this.props.names.map(function (name) {
-					return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: name.indexOf('Top') >= 0 ? name + ' Kim' : name });
+					return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: name == 'Top' ? name + '-Kim' : name });
 				})
 			);
 		}

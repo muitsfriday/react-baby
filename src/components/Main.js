@@ -4,16 +4,11 @@ import HelloWorld from './HelloWorld'
 
 class Main extends React.Component {
 
-	constructor(props){
-		super(props)
-
-	}
-
 	renderScore() {
 		if(this.props.score > 50) {
-			return <p>score is more than 50</p>
+			return <p>you pass</p>
 		} else {
-			return <p>score is less than or equal 50</p>
+			return <p>you fail</p>
 		}
 	}
 
@@ -21,7 +16,7 @@ class Main extends React.Component {
 		return (
 			<div id="main-container">
 				{this.renderScore()}
-				{this.props.names.map(name => <HelloWorld name={name.indexOf('Top') >= 0 ? name + ' Kim' : name} />)}
+				{this.props.names.map(name => <HelloWorld name={name == 'Top' ? name + '-Kim' : name} />)}
 			</div>
 		)
 	}
