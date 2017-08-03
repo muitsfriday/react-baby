@@ -11237,7 +11237,6 @@ var _temp = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 // CONCATENATED MODULE: ./src/components/HelloWorld.js
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(32);
@@ -11344,7 +11343,14 @@ var Main_Main = function (_React$Component) {
 				this.renderScore(),
 				this.props.names.map(function (name) {
 					return Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(HelloWorld_defaultExport, { name: name == 'Top' ? name + '-Kim' : name });
-				})
+				}),
+				Main___WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					'button',
+					{ onClick: function onClick(e) {
+							alert('clicked');console.log(e.target);
+						} },
+					'click me'
+				)
 			);
 		}
 	}]);
