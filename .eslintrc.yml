@@ -1,0 +1,15 @@
+extends:
+  - standard
+  - react-app
+  - plugin:jsx-a11y/recommended
+plugins:
+  - jsx-a11y
+  - eslint-plugin-flowtype
+parser: babel-eslint
+rules:
+  object-curly-spacing: [ error, always ]
+  react/prop-types: off
+  no-new: off
+  indent: [ error, 4 ]
+globals:
+  React: false

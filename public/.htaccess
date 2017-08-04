@@ -1,0 +1,3 @@
+DirectoryIndex index.php
+RewriteEngine On
+RewriteRule index.html index.php [L]
