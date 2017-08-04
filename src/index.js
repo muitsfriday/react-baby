@@ -3,5 +3,8 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+
+ReactDOM.render(<App title="hello hello" />, 
+	document.getElementById('root'))
+
 registerServiceWorker()
