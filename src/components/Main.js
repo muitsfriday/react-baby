@@ -5,6 +5,7 @@ import HelloWorld from './HelloWorld'
 class Main extends React.Component {
 
 	constructor(props) {
+		console.log('constructor')
 		super(props)
 		this.state ={
 			score: parseInt(props.score)
