@@ -1,10 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
 import registerServiceWorker from './registerServiceWorker'
 
 
-ReactDOM.render(<App title="hello hello" />, 
+import App from './App'
+import MagicBox from './components/MagicBox'
+
+ReactDOM.render(
+<App test={1000} title="hello hello" >
+	<MagicBox names={ ['top', 'bell', 'ann', 'tim'] } />
+</App>, 
 	document.getElementById('root'))
 
 registerServiceWorker()
