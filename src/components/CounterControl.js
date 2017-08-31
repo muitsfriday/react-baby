@@ -6,8 +6,8 @@ export default class CounterControl extends Component {
 	render() {
 		return (
 			<div className="control">
-				<button>+1</button>
-				<button>-1</button>
+				<button onClick={() => this.props.incCounter(1)}>+1</button>
+				<button onClick={() => this.props.decCounter(1)}>-1</button>
 			</div>
 		)
 	}
