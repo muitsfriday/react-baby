@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Display from './components/Display'
+import Display from './containers/Display'
 import CounterControl from './containers/CounterControl'
 import GoalStatus from './components/GoalStatus'
 import GoalSetter from './components/GoalSetter'
